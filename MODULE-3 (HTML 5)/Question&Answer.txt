@@ -1,0 +1,102 @@
+Q.1 What are the new tags added in HTML5?
+A.1 Some new tags were introduced in HTML 5 to provide a better document structure. These tags are listed below.
+
+<article>	Represents an independent piece of content of a document, such as a blog entry or newspaper article.
+
+<aside >	Represents a piece of content that is only slightly related to the rest of the page.
+
+<audio>	Defines an audio file.
+
+<canvas>	This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+
+<command>	Represents a command the user can invoke.
+
+<datalist>	Together with the a new list attribute for input can be used to make comboboxes.
+
+<details>	Represents additional information or controls which the user can obtain on demand.
+
+<embed>	Defines external interactive content or plugin.
+
+<figure>	Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+
+<footer>	Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+
+<header>	Represents a group of introductory or navigational aids.
+
+<hgroup>	Represents the header of a section.
+
+<keygen>	Represents control for key pair generation.
+
+<mark>	Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+
+<meter>	Represents a measurement, such as disk usage.
+
+<nav>	Represents a section of the document intended for navigation.
+
+<output>	Represents some type of output, such as from a calculation done through scripting.
+
+<progress>	Represents a completion of a task, such as downloading or when performing a series of expensive operations.
+
+<ruby>	Together with <rt> and <rp> allow for marking up ruby annotations.
+
+<section>	Represents a generic document or application section.
+
+<time>	Represents a date and/or time.
+
+<video>	Defines a video file.
+
+<wbr>	Represents a line break opportunity.
+
+
+
+Q.2 How to embed audio and video in a webpage?
+A.2 -> Embed audio in HTML.
+       To embed audio in HTML, we use the <audio> tag. Before HTML5, audio cannot be added to web pages in the Internet Explorer era. To play audio, we used web plugins like Flash. After the release of HTML5, it is possible. This tag supports Chrome, Firefox, Safari, Opera, and Edge in three audio formats – MP3, WAV, OGG. Only Safari browser doesn’t support OGG audio format.
+        ex.
+        <audio>
+    <source src="file_name" type="audio_file_type">
+        </audio>
+
+    -> Embed video in HTML.
+       To embed video in HTML, we use the <video> tag. It contains one or more video sources at a time using <source> tag. It supports MP4, WebM, and Ogg in all modern browsers. Only Ogg video format doesn’t support in Safari browser. 
+       ex.
+       <video>
+    <source src="file_name" type="video_file_type">
+       </video>
+
+
+Q.3 Semantic element in HTML5?
+A.3 Semantic Elements: Semantic elements have meaningful names which tells about type of content. For example header, footer, table, … etc. HTML5 introduces many semantic elements as mentioned below which make the code easier to write and understand for the developer as well as instructs the browser on how to treat them. 
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+          Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+          Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+Q.4 Canvas and SVG tags?
+A.4 SVG: The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
+
+An SVG image is drawn out using a series of statements that follow the XML schema — that means SVG images can be created and edited with any text editor, such as Notepad. There are several other advantages of using SVG over other image formats like JPEG, GIF, PNG, etc.
+
+SVG images can be searched, indexed, scripted, and compressed.
+SVG images can be created and modified using JavaScript in real time.
+SVG images can be printed with high quality at any resolution.
+SVG content can be animated using the built-in animation elements.
+SVG images can contain hyperlinks to other documents.
+
+CANVAS: The HTML5 canvas element can be used to draw graphics on the webpage via JavaScript. The canvas was originally introduced by Apple for the Mac OS dashboard widgets and to power graphics in the Safari web browser. Later it was adopted by the Firefox, Google Chrome and Opera. Now the canvas is a part of the new HTML5 specification for next generation web technologies.
+
+By default the <canvas> element has 300px of width and 150px of height without any border and content. However, custom width and height can be defined using the CSS height and width property whereas the border can be applied using the CSS border property.
+
