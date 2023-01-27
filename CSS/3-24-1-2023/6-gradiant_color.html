@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gredient Color</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .div1 {
+
+            background-image: radial-gradient(circle at top,
+                    #123567 44px,
+                    #ab3456 112px,
+                    #de3211 136px,
+                    #abcdef 255px);
+        }
+
+        .div2 {
+
+            background: linear-gradient(to top,
+                    #123567 50px,
+                    #ab3456 154px,
+                    #de3211 240px,
+                    #abcdef 322px);
+        }
+
+        .div3 {
+
+            background: conic-gradient(#123567 48deg,
+                    #ab3456 198deg,
+                    #de3211 242deg,
+                    #abcdef 293deg,
+                    #123567 334deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>
