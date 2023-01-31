@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        div {
+            height: auto;
+            width: 250px;
+            border: 4px solid darkmagenta;
+            padding: 15px;
+            margin: auto;
+        }
+
+        div::first-letter {
+            font-size: 50px;
+        }
+
+        div::first-line {
+            color: red;
+        }
+
+        /* div::after {
+            content: ;
+        }
+
+        div::before {
+            content: ;
+        }*/
+
+        div::selection {
+            color: white;
+            background-color: blue;
+        }
+
+        li::marker {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, suscipit aperiam officia atque asperiores
+        numquam magni laborum harum nihil accusantium, sint quia! Possimus delectus voluptatum temporibus soluta
+        asperiores nobis facilis.
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>service</li>
+    </ul>
+</body>
+
+</html>
