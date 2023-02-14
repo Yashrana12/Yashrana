@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .list {
+            background-color: brown;
+        }
+
+        .list .nav {
+            display: flex;
+            gap: 15px;
+            color: white;
+        }
+
+        .list .nav li {
+            padding: 20px;
+            background-color: blue;
+        }
+
+        .list .nav li a {
+            color: white;
+        }
+
+        .show-menu {
+            position: relative;
+        }
+
+        .show-menu .outer-menu {
+            display: none;
+            position: absolute;
+            top: 55px;
+            left: 0;
+            width: 100px;
+            height: auto;
+        }
+
+        .show-menu .outer-menu li {
+            background-color: olive;
+            padding: 10px 20px;
+        }
+
+        .show-menu:hover .outer-menu {
+            display: block;
+        }
+
+        .show-menu span {
+            transition: 0.5s all ease;
+        }
+
+        .show-menu:hover span {
+            transform: rotate(180deg);
+        }
+
+        inner {
+            position: relative;
+        }
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 8px;
+            left: 100px;
+            width: 100px;
+        }
+
+        .inner-menu li {
+            background-color: crimson !important;
+        }
+
+        .inner:hover .inner-menu {
+            display: block;
+        }
+
+        divide::after {
+            content: "";
+            height: 2px;
+            width: 120px;
+            background-color: aquamarine;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li class="show-menu"><a href="">Service</a><span class="fa-solid fa-angle-down"></span>
+                <ul class="outer-menu">
+                    <li><a href="">Service 1</a> </li>
+                    <div class="divide"></div>
+                    <li class="inner"><a href="">Service 2</a>
+                        <ul class="inner-menu">
+                            <li>Service 1</li>
+                            <li>Service 2</li>
+                        </ul>
+                    </li>
+                    <div class="divide"></div>
+                    <li><a href="">service 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
