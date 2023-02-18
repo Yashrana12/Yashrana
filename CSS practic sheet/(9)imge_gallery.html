@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            height: 200px;
+            width: 250px;
+            border: 5px solid #247824;
+            border-radius: 10px;
+        }
+
+        .main {
+            background-color: #bbeff7;
+            ;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 10px;
+            gap: 15px;
+            width: 100%;
+            justify-items: center;
+        }
+
+        .img1:hover {
+            transition: 1s all ease;
+            transform: scale(1.2, 1.2);
+        }
+
+        .img2:hover {
+            transition: 1s all ease;
+            transform: skewy(30deg);
+        }
+
+        .img3:hover {
+            transition: 1s all ease;
+            transform: rotateY(180deg);
+        }
+
+        .img4:hover {
+            transition: 1s all ease;
+            transform: translate(50px, 80px);
+        }
+
+        .img5:hover {
+            transition: 1s all ease;
+            transform: skewx(45deg);
+        }
+
+        .img6:hover {
+            transition: 1s all ease;
+            transform: matrix(1, 0.2, 0.5, 1, 0, 0);
+        }
+
+        .img7:hover {
+            transition: 1s all ease;
+            transform: translateX(45px);
+        }
+
+        .img8:hover {
+            transition: 1s all ease;
+            transform: scaleY(0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="img/1 bear.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="img/2 deer images.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="img/3 ele.jpg" alt="">
+        </div>
+        <div class="img4">
+            <img src="img/4 fox1.jpg" alt="">
+        </div>
+        <div class="img5">
+            <img src="img/5 leo.jpg" alt="">
+        </div>
+        <div class="img6">
+            <img src="img/6 panda-to-tree.jpg" alt="">
+        </div>
+        <div class="img7">
+            <img src="img/7 lion.jpg" alt="">
+        </div>
+        <div class="img8">
+            <img src="img/8 tiger.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .list {
+            background-color: rgb(19, 123, 209);
+        }
+
+        .list .nav {
+            display: flex;
+            color: orange;
+            gap: 15px;
+        }
+
+        .list .nav li {
+            padding: 10px;
+            background-color: orangered;
+        }
+
+        .list .nav li a {
+            color: white;
+        }
+
+        .main-menu {
+            position: relative;
+        }
+
+        .main-menu .inner-menu {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: 0px;
+            width: 100px;
+            height: auto;
+        }
+
+        .main-menu .inner-menu li {
+            background-color: black;
+            padding: 10px 20px;
+        }
+
+        .main-menu:hover .inner-menu {
+            display: block;
+        }
+
+        .main-menu span {
+            transition: 0.5 all ease;
+            color: white;
+            align-items: center;
+        }
+
+        .main-menu:hover span {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <div class="divide"></div>
+            <li class="main-menu"><a href="">Service</a><span class="fa-solid fa-angle-down
+                "></span>
+                <ul class="inner-menu">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                </ul>
+            </li>
+            <div class="divide"></div>
+            <li><a href="">Blog</a></li>
+            <div class="divide"></div>
+            <li><a href="">About As</a></li>
+            <div class="divide"></div>
+            <li><a href="">Contact As</a></li>
+            <div class="divide"></div>
+        </ul>
+    </div>
+</body>
+
+</html>
