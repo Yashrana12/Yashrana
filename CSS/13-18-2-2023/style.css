@@ -580,6 +580,7 @@ header .navigation .theme button:hover{
 }
 .footer .footer-grid .footer-logo .para{
     color: #fff5ee;
+    line-height: 30px;
 }
 .footer .footer-grid h3{
     padding-bottom: 20px;
