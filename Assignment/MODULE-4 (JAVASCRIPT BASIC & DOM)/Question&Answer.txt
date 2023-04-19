@@ -1,0 +1,99 @@
+Q.1 What is JavaScript? 
+A.1 JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
+
+Q.2 What is the use of isNaN function? 
+A.2 In JavaScript, NaN is short for "Not-a-Number".
+In JavaScript, NaN is a number that is not a legal number.
+The Number.isNaN() method returns true if the value is NaN, and the type is a Number.
+
+Q.3 What is negative Infinity? 
+A.3 NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript
+
+Q.4 Which company developed JavaScript?
+A.4 JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser.
+
+Q.5 What are undeclared and undefined variables?
+A.5 
+Undefined:
+     It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. 
+
+Undeclared:
+     It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclared variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclared variables is always global. 
+
+Q.6 Write the code for adding new elements dynamically?
+A.6 
+
+Q.7 What is the difference between ViewState and SessionState?
+A.7 SessionState :
+   -> Can be persisted in memory, which makes it a fast solution. Which 
+      means state cannot be shared in the Web Farm/Web Garden.
+   -> Can be persisted in a Database, useful for Web Farms / Web Gardens.
+   -> Is Cleared when the session dies - usually after 20min of inactivity.
+
+ViewState:
+   -> Is sent back and forth between the server and client, taking up   bandwidth.
+   -> Has no expiration date.
+   -> Is useful in a Web Farm / Web Garden
+
+Q.8 What is === operator? 
+A.8 The strict equality operator ( === ) checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict .
+
+Q.9 How can the style/class of an element be changed?
+A.9 To change the styles of all elements with a specific class:
+
+     Use the querySelectorAll() method to get a collection of the elements with the specific class.
+     Use the forEach() method to iterate over the collection.
+     On each iteration, use the style object to change the element's styles.
+
+Q.10 How to read and write a file using JavaScript? 
+A.10 
+
+Q.11 What are all the looping structures in JavaScript?
+A.11 JavaScript supports different kinds of loops:
+        => for - loops through a block of code a number of times.
+        => for/in - loops through the properties of an object.
+        => for/of - loops through the values of an iterable object.
+        => while - loops through a block of code while a specified condition is true.
+
+Q.12 How can you convert the string of any base to an integer in JavaScript?
+A.12 To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. parseInt() function returns Nan( not a number) when the string doesn't contain number. If a string with a number is sent, then only that number will be returned as the output.
+
+Q.13 What is the function of the delete operator? 
+A.13 The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+    delete object
+        // or
+    delete object.property
+        // or
+    delete object['property']
+
+Q.14 What are all the types of Pop up boxes available in JavaScript?
+A.14 JavaScript has three kind of popup boxes:    (1).Alert box, 
+                                                  (2).Confirm box,
+                                                  (3).Prompt box.
+
+Q.15 What is the use of Void (0)?
+A.15 JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+Q.16 How can a page be forced to load another page in JavaScript?
+A.16 We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+
+Q.17 What are the disadvantages of using innerHTML in JavaScript? 
+A.17 Inner HTML is slow
+     Inner HTML is slow because when we use the inner HTML property in the code it allows us to      change using the JavaScript language. It is very slow because as inner HTML already parses     the  content even we have to parse the content again so that’s why it takes time.
+
+     Event handlers attached to any DOM element are preserved
+     When we have used the event handlers then the event handlers are not automatically attached to the new elements created by innerHTML. To change that, we have to track the event handlers and manually attach them to a new element.
+     It means that first, we have to fetch the element property through innerHTML, and then we     have  to attach them to a new element.
+
+     Replacement is done everywhere
+     When innerHTML property is used to modify, all the DOM nodes will have to be parsed and created again.
+
+     It is not possible to append innerHTML
+     In JavaScript, ‘+=’ is commonly used for appending. However, when using innerHTML to append to an HTML tag, the entire tag is re-parsed.
+
+     Breaks the document
+     InnerHTML does not provide proper validation, so any valid HTML code can be used. This has the potential to break the JavaScript document. Even broken HTML can be used, which can cause unexpected issues.
+
+     Used for Cross-site Scripting
+     The text and images or elements in the webpage can used by hackers or malicious users to change the text or data and show some different undesired or threatful content by the other HTML element tag. This leads to change of sensitive and confidential information.
+
