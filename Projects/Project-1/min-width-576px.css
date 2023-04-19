@@ -1,0 +1,36 @@
+@media (max-width:576px) {
+    .container{
+        margin: 0px 30px;
+    }
+
+/*---- header ----*/
+
+header .navigation .logo{
+    flex: 0.5;
+    align-items: center;
+}
+header .navigation .nav{
+    display: none;
+}
+header .navigation .theme button{
+    display: block;
+    justify-content: space-between;
+}
+/* ---- fitness ----*/
+.fitness .fitness-flex{
+    flex-direction: column;
+}
+.fitness .fitness-flex .right-content{
+    grid-template-columns: repeat(1,1fr);
+}
+/* ---- service ---- */
+.service .service-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+/* ---- start ---- */
+.start .start-flex{
+    display: grid;
+}
+}
