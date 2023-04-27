@@ -31,6 +31,7 @@ ol{
     display: flex;
     align-items: center;
     gap: 20px;
+    color: white;
 }
 .navigation .navigation-flex .icons ol{
     display: flex;
@@ -53,7 +54,7 @@ ol{
 
 /* ---------- Header ---------- */
 .header{
-    background-color: lightgreen;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     z-index: 2222;
@@ -88,7 +89,7 @@ ol{
     gap: 20px;
 }
 .header .header-flex .nav ol a{
-    color: whitesmoke;
+    color: black;
     font-weight: 600;
     transition: 0.1s all ease;
 }
@@ -118,7 +119,7 @@ ol{
     position: relative;
 }
 .header .header-flex .nav ol .blog span{
-    color: white;
+    color: black;
     transition: 0.2s all linear;
 }
 .header .header-flex .nav ol .blog:hover span{
@@ -142,7 +143,7 @@ ol{
     position: relative;
 }
 .header .header-flex .nav ol .pages span{
-    color: white;
+    color: black;
     transition: 0.3s all linear;
 }
 .header .header-flex .nav ol .pages:hover span{
@@ -184,6 +185,9 @@ ol{
     top: 0;
     z-index: 2222;
 }
+.changebg{
+    background-color: white;
+}
 /* ---------- home-image -----------*/
 .homeimg{
     background: url(images/carousel-1.jpg);
@@ -222,6 +226,8 @@ ol{
     font-weight: 600;
     color: white;
     flex: 1;
+
+  justify-content: center;
 }
 .homeimg button{
     height: 50px;
