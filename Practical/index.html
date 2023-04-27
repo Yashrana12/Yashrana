@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#open_bars").click(function () {
+                $(".nav").addClass("show_menu").slideToggle()
+            })
+        })
+    </script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="container">
+            <div class="navigation-p">
+                <div class="navigation-flex">
+                    <div class="contacts">
+                        <ol>
+                            <li>
+                                <span class="fa-solid fa-location-dot"></span>
+                                123 Street, New York, USA
+                            </li>
+                            <li>
+                                <span class="fa-solid fa-phone"></span>
+                                +012 345 6789
+                            </li>
+                            <li>
+                                <span class="fa-solid fa-envelope"></span>
+                                mail@domain.com
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="icons">
+                        <ol>
+                            <li><a href=""><span class="fa-brands fa-instagram"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-youtube"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-facebook"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-linkedin"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-twitter"></span></a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header">
+        <div class="container">
+            <div class="header-p">
+                <div class="header-flex">
+                    <div class="logo">
+                        <a href="">
+                            <span class="fa-solid fa-user-tie"></span>
+                            <h1>Startup</h1>
+                        </a>
+                    </div>
+
+                    <div class="nav">
+                        <ol>
+                            <li><a href="" class="home">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li class="blog"><a href="">Blog</a>
+                                <span class="fa-solid fa-angle-down"></span>
+                                <ol class="blogs">
+                                    <li><a href="">Blog Grids</a></li>
+                                    <li><a href="">Blog Details</a></li>
+                                </ol>
+                            </li>
+                            <li class="pages"><a href="">Pages</a>
+                                <span class="fa-solid fa-angle-down"></span>
+                                <ol class="p-menu">
+                                    <li><a href="">Pricing Plan</a></li>
+                                    <li><a href="">Our Features</a></li>
+                                    <li><a href="">Team Members</a></li>
+                                    <li><a href="">Testimonial</a></li>
+                                    <li><a href="">Free Quote</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                            <button>Download Pro Version </button>
+                        </ol>
+                    </div>
+
+                    <div class="bars">
+                        <button id="open-bars">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="homeimg">
+        <div class="home-p">
+            <h6>CREATIVE & INNOVATIVE</h6>
+            <h1>Creative & Innovative Digital Solution</h1>
+            <div>
+                <button>Free Quote</button>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
