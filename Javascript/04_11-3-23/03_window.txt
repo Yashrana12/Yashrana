@@ -1,0 +1,8 @@
+Window Objects :
+5 function / Methods
+
+(1) alert()
+(2) confirm()
+(3) prompt()
+(4) open()
+(5) close()
