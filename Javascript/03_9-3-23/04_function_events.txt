@@ -1,0 +1,39 @@
+function?
+function are create to reusable code.
+not take to much time for programming.
+
+there is 2 type of function in javascript:
+(1) predefined / built-it
+    => which create already in programming.
+    write(),writeln(),log(),isNaN(),add(),remove(),toggle(),contains()
+
+(2) user define:
+    => which is created by developer / user
+    syntax :
+    function function_name(){
+        statements
+    }
+
+    function function_name(param1,param2...,paramN){
+        statements
+    }
+
+    events :
+    it is task
+    in javascript there iss 4 type of events:
+    (1) mouse = click,dblclick,mouseover,mouseleave,mouseout,mouseon
+    (2) keyboard = keypress,keyup,keydown
+    (3) form = submit,change,blur,focus
+    (4) window = load,unload,resize
+
+
+    event handler:
+    which is handle an event.
+    
+    events       event handler
+    =======================
+    click     =   onclick
+    keypress  =   onkeypress
+    submit    =   onsubmit
+    load      =   onload
+    change    =   onchange
