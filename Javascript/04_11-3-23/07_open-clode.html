@@ -14,8 +14,12 @@
             b = window.open(a);
         }
 
-        function close_fn(a) {
-            b = window.close(a)
+        function close_fn() {
+            b = window.close()
+        }
+
+        function forward_fn() {
+            window.history.forward()
         }
     </script>
 </head>
@@ -24,6 +28,7 @@
     <!-- <a href=""></a>-->
     <button onclick="return open_fn()">open</button>
     <button onclick="return close_fn(a) ">close</button>
+    <button onclick="return forward_fn()">Forward</button>
 </body>
 
 </html>
