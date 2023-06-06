@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!-- array is collection of multiple data or name of memory location-->
+<p id="p1"></p>
+<script>
+    let a = 10;
+    console.log(a)
+
+    let arr = ["yash", "nick", "dev", "riya", "8200412272"];
+    console.log(arr)
+    document.getElementById("p1").innerHTML = arr
+
+    // for print an array
+    // for array print used for...of loop
+
+    for (const mya of arr) {
+        console.log(mya)
+        document.write(mya + "<br>")
+    }
+
+    // console.log(mya)
+    arr.pop()
+    console.log(arr)
+
+    arr.push("raj");
+    console.log();
+
+    arr.shift()
+    console.log(arr)
+
+    arr.unshift("deep")
+    console.log(arr)
+</script>
