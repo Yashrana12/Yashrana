@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="reg_ex.js"></script>
+    <script src="check_blanks.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+        background-color: greenyellow;
+    }
+
+    form {
+        width: 60%;
+        /* border: 2px solid black; */
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px black;
+        /* line-height: 30px; */
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+
+    form h1 {
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .col-1 {
+        flex: 1;
+        text-align: right;
+        padding: 5px;
+    }
+
+    .col-2 {
+        flex: 2;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .col-3 {
+        flex: 1;
+        text-align: center;
+    }
+
+    input[type="text"],
+    [type="date"],
+    [type="password"],
+    select {
+        height: 25px;
+        width: 350px;
+        padding: 0px 5px;
+        font-size: 17px;
+        /* border-radius: 5px;
+        border: 2px solid gray; */
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+
+    span {
+        color: red;
+    }
+
+    button {
+        height: 40px;
+        width: 350px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 10px;
+    }
+
+    button:hover {
+        background-color: white;
+        color: blue;
+        border: 2px solid blue;
+    }
+
+    .pass-field {
+        position: relative;
+    }
+
+    .pass-field i {
+        position: absolute;
+        right: 87px;
+        top: 12px;
+    }
+</style>
+
+<body>
+    <form action="#">
+        <h1>Register For Job</h1>
+        <!-- first name -->
+        <div class="row">
+            <div class="col-1">
+                <label for="">First Name :</label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="fname" placeholder=" Enter First Name" onkeyup="return reg_ex_name(this,'msg1')"
+                    onblur="return check_value(this,'msg1')">
+            </div>
+            <div class="col-3">
+                <span id="msg1"></span>
+            </div>
+        </div>
+
+        <!-- Middle name -->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Middle Name :</label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="fname" placeholder=" Enter Middle Name" onkeyup="return reg_ex_name(this,'msg2')"
+                    onblur="return check_value(this,'msg2')">
+            </div>
+            <div class="col-3">
+                <span id="msg2"></span>
+            </div>
+        </div>
+
+
+        <!-- last name -->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Last Name :</label>
+            </div>
+            <div class="col-2">
+                <input type="text" name="" id="lname" placeholder=" Enter Last Name"
+                    onkeyup="return reg_ex_name(this,'msg3')" onblur="return check_value(this,'msg3')">
+            </div>
+            <div class="col-3">
+                <span id="msg3"></span>
+            </div>
+        </div>
+
+
+        <!--Address-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Address :</label>
+            </div>
+            <div class="col-2">
+                <textarea name="" id="addr" cols="40" rows="4" placeholder="Address must have more then 20 letters"
+                    onblur="return check_value(this,'msg4')" onkeyup="return check_address_length()"></textarea>
+            </div>
+            <div class="col-3">
+                <span id="msg4"></span>
+            </div>
+        </div>
+
+        <!--Date-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Date of Birth :</label>
+            </div>
+            <div class="col-2">
+                <input type="date" id="dob" onblur="return check_value(this,'msg5')">
+            </div>
+            <div class="col-3">
+                <span id="msg5"></span>
+            </div>
+        </div>
+
+
+        <!-- radio button-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Gender :</label>
+            </div>
+            <div class="col-2">
+                <input type="radio" name="gen" id="male">
+                <label for="">Male</label>
+                <input type="radio" name="gen" id="female">
+                <label for="">Female</label>
+                <input type="radio" name="gen" id="others">
+                <label for="">Others</label>
+            </div>
+            <div class="col-3">
+                <span id="msg6"></span>
+            </div>
+        </div>
+
+
+
+
+        <!--Experience-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Experience :</label>
+            </div>
+            <div class="col-2">
+                <select name="" id="exp" onblur="return check_value(this,'msg6')">
+                    <option value="-1">---Experience---</option>
+                    <option value="">Trainee</option>
+                    <option value="">Less then 1 year</option>
+                    <option value="">More then 1 year</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <span id="msg6"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Number-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Mobile No :</label>
+            </div>
+            <!-- onblur="return check_value(this,'msg7')" -->
+            <div class="col-2">
+                <input type="text" name="" id="mno" onkeyup="return mobile_ex(this,'msg7')"
+                    onblur="return mobile_length()" maxlength="10">
+            </div>
+            <div class="col-3">
+                <span id="msg7"></span>
+            </div>
+        </div>
+
+        <!-- Email Id -->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Email Id :</label>
+            </div>
+            <div class="col-2">
+                <input type="text" name="" id="mail" onkeyup="regex_email(this, 'msg8')"
+                    onblur="return check_value(this,'msg8')" required>
+            </div>
+            <div class="col-3">
+                <span id="msg8"></span>
+            </div>
+        </div>
+
+        <!--Password-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Create Password :</label>
+            </div>
+
+            <div class="col-2 pass-field">
+                <input type="password" name="" id="pass" onkeyup="return pass_reg_ex()">
+                <i class=" fa-solid fa-eye-slash" id="icon1"></i>
+            </div>
+            <div class="col-3">
+                <span id="msg9"></span>
+            </div>
+        </div>
+
+        <!--Confirm Password-->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Confirm Password :</label>
+            </div>
+            <div class="col-2 pass-field">
+                <input type="password" name="" id="cpass" onkeyup="return match_password()">
+                <i class=" fa-solid fa-eye-slash" id="icon2"></i>
+            </div>
+            <div class="col-3">
+                <span id="msg10"></span>
+            </div>
+        </div>
+
+        <!-- button -->
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="return form_blank_value()">Register</button>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <p>
+            <b>Note :</b>
+            password between 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one
+            numeric digit, and one special character
+        </p>
+
+    </form>
+
+    <script>
+        let icon = document.querySelector("  #icon1")
+        let pass = document.getElementById("pass")
+        icon.addEventListener("click", function () {
+            if (pass.type == "password" || icon.classList.contains("fa-eye-slash") == "true") {
+                pass.type = "text"
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            } else {
+                pass.type = "password"
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            }
+        })
+
+        let cicon = document.querySelector("  #icon2")
+        let cpass = document.getElementById("cpass")
+        cicon.addEventListener("click", function () {
+            if (cpass.type == "password" || cicon.classList.contains("fa-eye-slash") == "true") {
+                cpass.type = "text"
+                cicon.classList.remove("fa-eye-slash");
+                cicon.classList.add("fa-eye");
+            } else {
+                cpass.type = "password"
+                cicon.classList.remove("fa-eye");
+                cicon.classList.add("fa-eye-slash");
+            }
+        })
+    </script>
+</body>
+
+</html>
