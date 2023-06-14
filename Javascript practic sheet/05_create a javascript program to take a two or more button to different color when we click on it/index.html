@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+
+    }
+</style>
+
+<body>
+    <button onclick=" return red_fn()">Red</button>
+    <button onclick="return green_fn()">Green</button>
+    <button onclick="return blue_fn()">Blue</button>
+
+    <br><br>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    <script>
+        function red_fn() {
+            let div1 = document.getElementById("div1")
+            div1.style.backgroundColor = "Red"
+        }
+
+        function green_fn() {
+            let div1 = document.getElementById("div2")
+            div1.style.backgroundColor = "Green"
+        }
+
+        function blue_fn() {
+            let div1 = document.getElementById("div3")
+            div1.style.backgroundColor = "Blue"
+        }
+    </script>
+</body>
+
+</html>
