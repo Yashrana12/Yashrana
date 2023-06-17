@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script type="text/javascript">
+    function fun() {
+        let color;
+        let choice = prompt("press 1 for red / press 2 for blue");
+        let pid = document.getElementById('p1');
+        choice = number(choice);
+        alert(choice);
+
+
+
+        switch (choice) {
+            case 1:
+                pid.style.color = "red";
+                break;
+            case 2:
+                pid.style.color = "blue";
+                break;
+            default:
+                alert("wrong choice")
+                break;
+        }
+    }
+</script>
+
+<body>
+    <form action="">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dignissimos quasi dolorem ducimus
+            quas rerum deserunt! Non earum, fuga nisi dolor eos id. Est, repellat exercitationem! Error dignissimos
+            asperiores eligendi.</p>
+
+        <button onclick="fun()">Click</button>
+    </form>
+</body>
+
+</html>

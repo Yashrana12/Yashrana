@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            let i = 1; //initialization
+            let str = "";
+            while (i <= 10) { // condition
+                str += `<p>i=${i}</p>`;
+                console.log(str);
+                i++; // increment/decrement
+            }
+            document.getElementById("whileLoop").innerHTML = str;
+        }
+
+        function forLoop() {
+            let i;
+            let num, evenAdd = 0,
+                oddAdd = 0
+            for (i = 1; i <= 10; i++) {
+                num = prompt("Enter number")
+                num = Number(num);
+                if (num % 2 == 0) {
+                    evenAdd += num
+                } else {
+                    oddAdd += num;
+                }
+            }
+            alert(evenAdd);
+            alert(oddAdd);
+        }
+
+        function doWhileLoop() {
+            let i = 1; //initialization
+            let str = "";
+            do { // condition
+                str += `<p>i=${i}</p>`;
+                console.log(str);
+                i++; // increment/decrement
+            } while (i <= 10)
+        }
+
+        function breakEx() {
+            let num;
+            for (;;) {
+                num = prompt("Enter num")
+                if (num == 3) {
+                    break;
+                }
+            }
+        }
+
+        function ContinueEx() {
+            let i = 1;
+            for (i = 1; i <= 10; i++) {
+                if (i == 5 || i == 7) {
+                    continue;
+                }
+                console.log("i" + i)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="fun()">Check while loop</button>
+    <button onclick="forLoop()">Check for loop</button>
+    <button onclick="doWhileLoop()">Check do while loop</button>
+    <button onclick="breakEx()"> Check Break</button>
+    <button onclick="ContinueEx()"> Check Continue</button>
+
+
+
+
+    <div id="whileLoop"></div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javaScript">
+        function sum() {
+            let num1, num2, sum;
+            num1 = prompt("Enter num1")
+            num2 = prompt("Enter num2")
+            if(num1 > 0 && num2 > 0){
+                alert("first")
+            }
+            else if( num1 > 0 && num2 < 0){
+                alert("second")
+            }
+            else if(num1 < 0 && num2 < 0){
+                alert("third")
+            }
+            else{
+                alert("wrong")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <button onclick="sum()">Click here</button>
+    </form>
+</body>
+
+</html>

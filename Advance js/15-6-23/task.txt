@@ -1,0 +1,5 @@
+(1)return object 
+ resolve :
+name + age + address
+
+(2) 
