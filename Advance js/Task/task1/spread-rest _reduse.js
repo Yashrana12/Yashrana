@@ -10,4 +10,3 @@ let sum = arr.reduce((lastEle, ele) => {
     return lastEle
 })
 console.log(sum)
-return
