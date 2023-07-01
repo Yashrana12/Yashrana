@@ -16,9 +16,9 @@ console.log(y) // ___________________ point-y1
 console.log(z) //___________________ point-z1
 
 
-// what will print at x1-_______ can't print before declaration
-// what will print at y1-_______ can't print before declaration
-// what will print at z1-_______ can't print before declaration
-// what will print at x2-_______ can't print before declaration
-// what will print at y2-_______ can't print before declaration
-// what will print at y2-_______ can't print before declaration
+// what will print at x1-_______ not defined
+// what will print at y1-_______ 0
+// what will print at z1-_______ not defined
+// what will print at x2-_______ can't print before initialization
+// what will print at y2-_______ can't print before initialization
+// what will print at y2-_______ can't print before initialization
