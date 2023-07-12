@@ -4,19 +4,19 @@ const json_data = require('./index.json');
 
 
 // 1. state na name par thi city na name
-function getCityByStateName(state) {
-    let filterState = json_data.filter((e) => {
-        return e.state_name === state
-    })
-    let arr1 = []
-    for (i = 0; i < filterState.length; i++) {
-        let element = filterState[i].city;
-        arr1.push(element)
-    }
-    return arr1
-}
-let storeFilterState = getCityByStateName("Delhi")
-console.log("🚀 ~ file: index.js:13 ~ storeFilterState:", storeFilterState)
+// function getCityByStateName(state) {
+//     let filterState = json_data.filter((e) => {
+//         return e.state_name === state
+//     })
+//     let arr1 = []
+//     for (i = 0; i < filterState.length; i++) {
+//         let element = filterState[i].city;
+//         arr1.push(element)
+//     }
+//     return arr1
+// }
+// let storeFilterState = getCityByStateName("Gujarāt")
+// console.log("🚀 ~ file: index.js:13 ~ storeFilterState:", storeFilterState)
 
 // 2. me apela hoy aa charactor thi vadhare  charactor hoy te city na name
 
@@ -42,6 +42,10 @@ console.log("🚀 ~ file: index.js:13 ~ storeFilterState:", storeFilterState)
 
 
 // 4. acending decending population wise 
+// cityPopulation.sort((a, b) => {
+//     return b.population - a.population
+// })
+// return cityPopulation
 
 
 // newArr.sort((a, b) => {
@@ -75,13 +79,65 @@ console.log("🚀 ~ file: index.js:13 ~ storeFilterState:", storeFilterState)
 
 //7. cities sum of particular state
 
-function getTotBy(state) {
-    const onlystate = json_data.filter(x => x.state_name === state);
-    let total = 0
-    const final = onlystate.reduce((x, c) => {
-        total = parseInt(c.population) + total;
-        return total;
-    });
-    console.log('totl', final)
+// function sumOfCityPop(state) {
+//     let filterState = json_data.filter((e) => {
+//         return e.state_name === state
+//     })
+
+//     let total = 0;
+//     filterState.map((e) => {
+//         total = parseInt(e.population) + total
+//     })
+//     console.log("🚀 ~ file: index.js:84 ~ filterState.map ~ total:", total)
+
+// }
+// sumOfCityPop("Gujarāt")
+
+//city wise population show
+// function matchCityName(cityName) {
+//     let filterCity = json_data.filter((e) => {
+//         return e.city === cityName
+//     })
+//     let population = []
+//     for (let i = 0; i < filterCity.length; i++) {
+//         const element = filterCity[i].population;
+//         population.push(element)
+//     }
+//     return population
+// }
+// let match = matchCityName("goa")
+// console.log("🚀 ~ file: index.js:105 ~ match:", match)
+
+
+
+// city to state 
+// function cityOfState(cityName) {
+//     let filterCity = json_data.filter((e) => {
+//         return e.city === cityName
+//     })
+//     let filterState = filterCity.filter((e) => {
+//         return e.state_name
+//     })
+//     let arr = []
+//     for (let index = 0; index < filterState.length; index++) {
+//         const element = filterState[index].state_name;
+//         arr.push(element)
+//     }
+//     return arr
+// }
+// let cityS = cityOfState("Vishākhapatnam")
+// console.log("🚀 ~ file: index.js:125 ~ cityS:", cityS)
+
+
+
+// search of city 
+function searchCity() {
+    let city = json_data.filter((e) => {
+        return e.city.toLowerCase().includes("ahm")
+    })
+    city.sort((a, b) => {
+        return a.population - b.population
+    })
+    console.log("city:", city)
 }
-getTotBy('Delhi')
+searchCity()

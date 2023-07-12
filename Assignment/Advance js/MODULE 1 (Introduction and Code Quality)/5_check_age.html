@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function checkAge() {
+        let age;
+        age = Number(age)
+
+        age = prompt("confirm age")
+        if (age > 18) {
+            alert("You Are Eligible To Join Tour")
+        } else {
+            grnt()
+        }
+    }
+
+    function grnt() {
+        if (confirm("did your parents garnts?") == true) {
+            agree()
+        } else {
+            alert("your access denied")
+        }
+    }
+
+    function agree() {
+        if (confirm("do you agree with your parenst?") == true) {
+            alert("your eligebale for tour")
+        } else {
+            alert("you are not eligeble for tour")
+        }
+    }
+    // let age = prompt("How old are you")
+    // if (checkAge(age)) {
+    //     alert('access granted')
+    // } else {
+    //     alert('access denied')
+    // }
+</script>
+
+<body>
+    <button onclick="checkAge()">Confirm your age</button>
+</body>
+
+</html>
