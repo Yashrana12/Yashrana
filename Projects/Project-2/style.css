@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+/* common css which apply on whole page */
+a{
+    text-decoration: none;
+}
+ol{
+    list-style: none;
+}
+.container{
+    margin:0px 100px;
+}
+body{
+    transition: 0.5s all linear;
+}
+
+
+
+/* ----------------- header              --------------------*/
+.header{
+    /* background-color: beige; */
+    position: fixed;
+    z-index: 3333;
+    width: 100%;
+    top: 0;
+    transition: 0.5s all linear;
+}
+.header .header-p{
+    padding: 25px 0px;
+}
+.header .navigation{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header .navigation .logo{
+    flex: 1;
+}
+.header .navigation .logo a{
+    color: #2a2a2a;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    justify-content: left;
+}
+.header .navigation.nav{
+    flex: 1.5;
+}
+.header .navigation .nav ol{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+.header .navigation .nav ol li a{
+    color: #2a2a2a;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s all linear;
+    font-weight: 500;
+    font-size: 15px;
+}
+.header .navigation .nav ol li a:hover{
+    color: darkgray;
+}
+.header .navigation .nav ol .up-menu{
+    position: relative;
+}
+.header .navigation .nav ol .up-menu .inner-menu{
+    position: absolute;
+    display: none;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.header .navigation .nav ol .up-menu:hover .inner-menu{
+    display: block;
+}
+.header .navigation .nav ol .up-menu:hover .inner-menu li{
+    padding: 5px;
+}
+.header .navigation .nav ol .up-menu .inner-menu .div1::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    display: block;
+}
+.header .navigation .nav ol .up-menu span{
+    color: black;
+    text-shadow: 0px 0px 1px black;
+    font-size: 12px;
+    transition: 0.5s all linear;
+}
+.header.navigation .nav ol .up-menu:hover span{
+    transform: rotateX(180deg);
+    color: gray;
+}
+.header .navigation .bar{
+    display: none;
+    flex: 0.3;
+    justify-content: end;
+}
+.header .navigation .bar button{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+.header .navigation .moon{
+    flex:0.2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.header .navigation .moon span{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    background-color:#2a2a2a;
+    border-radius:50%;
+}
+
+
+
+/* ========== dark mode ==========*/
+.dark-mode{
+    background-color: black;
+    color: white;
+    transition: 0.3s all linear;
+}
+
+/* ========== open menu ==========*/
+header .navigation .open_menu{
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+}
+.header .navigation .open_menu ol{
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+/* ========== header fixed ==========*/
+.header-fixed{
+    position: fixed;
+    z-index: 3333;
+    width: 100%;
+    top: 0;
+    background-color: black;
+}
+
+
+/* ---------- Home ---------*/
+.bxslider .home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.22222);
+    z-index: -1;
+    display: block;
+
+}
+.bxslider .home-text1{
+    background-image: url(./images/left-banner-image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bxslider .home-p{
+    padding: 400px 0px;
+}
+.bxslider .home .h1{
+    font-size: 40px;
+    color: #2a2a2a;
+    width: 50%;
+    text-align: center;
+    text-shadow: 0px 0px 2px black;
+    
+
+}
+.bxslider .home .p1{
+    font-size: 30px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+
+}
+.bxslider .home .btn{
+    height: 50px;
+    width: 250px;
+    background-color: transparent;
+    color: #2a2a2a;
+    align-items: center;
+    justify-content: center;
+}

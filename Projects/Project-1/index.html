@@ -2,49 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="Workout.css" />
-    <link rel="stylesheet" href="max-width-576px.css" />
-    <link rel="stylesheet" href="min-width-576px.css" />
-    <link rel="stylesheet" href="min-width-768px.css" />
-    <link rel="stylesheet" href="min-width-992px.css" />
-    <link rel="stylesheet" href="min-width-1200px.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- mediaquery -->
+    <link rel="stylesheet" href="max-width_576.css">
+    <link rel="stylesheet" href="min-width_576.css">
+    <link rel="stylesheet" href="min-width_768.css">
+    <link rel="stylesheet" href="min-width_992.css">
+    <link rel="stylesheet" href="min-width_1200.css">
 </head>
 
 <body>
+    <!-- header-navigation-->
     <header>
         <div class="container">
-            <div class="header-p">
+            <div class="head-p">
+                <!--use for flex-->
                 <div class="navigation">
                     <div class="logo">
                         <a href="">
-                            <span class="fa-solid fa-person-biking"></span>Workout
+                            <span class="fa-solid fa-mug-saucer
+                        "></span>
+                            Coffee Cafe
                         </a>
                     </div>
                     <div class="nav">
-                        <ul class="">
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">BLOG</a></li>
-                            <li>
-                                <a href="">PAGES</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Our Coffee</a></li>
+                            <li><a href="">Pages</a>
                                 <span class="fa-solid fa-angle-down"></span>
                             </li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="">Contact</a></li>
                         </ul>
                         <div class="search">
-                            <a href=""><span class="fa-solid fa-magnifying-glass"></span></a>
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                            <button class="btn1">Buy Now</button>
                         </div>
                     </div>
                     <div class="theme">
-                        <span class="fa-regular fa-moon"></span>
-                        <button>
-                            <a href=""><span class="fa-solid fa-bars"></span></a>
-                        </button>
+                        <span class="fa-solid fa-moon"></span>
+                        <button><span class="fa-solid fa-bars"></span></button>
                     </div>
                 </div>
             </div>
@@ -55,33 +60,83 @@
         <div class="container">
             <div class="home-p">
                 <div class="home-text">
-                    <h4>For The World Of Fitness.</h4>
-                    <a href=""><button>View Classes</button></a>
+                    <h1>Hot and tasty coffee</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eveniet aliquid et laboriosam,
+                        soluta odit, error cupiditate quasi perspiciatis id quod culpa vero cum aut repudiandae! Harum
+                        mollitia modi suscipit?</p>
+                    <button>Read More</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="fitness">
+    <section class="best-coffee">
         <div class="container">
-            <div class="fitness-p">
-                <div class="fitness-flex">
+            <div class="best-coffee-p">
+                <div class="coffee-box-flex">
                     <div class="left-content">
-                        <h1>Fitness is the answer</h1>
-                        <h4>Whenever the Question is your Physical Shape!</h4>
-                        <p>
-                            Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce
-                            fring et illa tincidunt laoreet Morbi ac metus vitae diam sceler
-                            isque male suada eget eu mauris. Cras varius lorem ac velit
-                            pharetra, non sc elerisque mi vulputate. Phasellus bibe ndum
-                            susc ipit nunc, non semper erat iaculis in. Nulla magna vel euis
-                            amet metus.
+                        <h5>BEST FOR YOU</h5>
+                        <h1>Who are we.</h1>
+                        <p>We make the delicious coffee for the coffee lovers. We are a team of dedicated coffee fans
+                            who celebrate exceptional coffee brands and roasters. Lorem ipsum feugiat.
                         </p>
-                        <button>Read More</button>
+                        <button>Learn More</button>
                     </div>
-                    <div class="right-content">
+                    <div class="right-image">
                         <div class="img1">
-                            <img src="images/class.jpg" alt="" />
+                            <img src="images/a1.jpg" alt="">
+                        </div>
+                        <div class="img1">
+                            <img src="images/a2.jpg" alt="">
+                        </div>
+                        <div class="img1">
+                            <img src="images/a3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="product-p">
+                <div class="product-heading">
+                    <h5>OUR SERVICES</h5>
+                    <h1>Our Product</h1>
+                </div>
+                <div class="product-grid">
+                    <!-- 1st grid -->
+                    <div class="grid-box">
+                        <div class="grid-image">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <h3><a href="">Espresso americano</a></h3>
+                            <p>Consectetur elit, sed do eiusmod tempor sed et dolor init
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 2nd grid -->
+                    <div class="grid-box">
+                        <div class="grid-image">
+                            <img src="images/2.jpg" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <h3><a href="">cappuccino coffee</a></h3>
+                            <p>Consectetur elit, sed do eiusmod tempor sed et dolor init
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 3rd grid -->
+                    <div class="grid-box">
+                        <div class="grid-image">
+                            <img src="images/3.jpg" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <h3><a href="">Cold brew coffee</a></h3>
+                            <p>Consectetur elit, sed do eiusmod tempor sed et dolor init
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -92,87 +147,58 @@
     <section class="service">
         <div class="container">
             <div class="service-p">
-                <div class="service-grid">
-                    <!--grid-1-->
-                    <div class="grid-box">
-                        <div class="grid-image">
-                            <img src="images/1.jpg" alt="" />
-                        </div>
-                        <div class="grid-text">
-                            <h3><a href="">Quality service</a></h3>
-                            <p>
-                                Vivamus a ligula quam. Dolor blandit eu leo non et init set
-                                ipsum corsec monec..
-                            </p>
-                        </div>
-                    </div>
-                    <!--grid-2-->
-                    <div class="grid-box">
-                        <div class="grid-image">
-                            <img src="images/2a.jpg" alt="" />
-                        </div>
-                        <div class="grid-text">
-                            <h3><a href="">Spacious Gym</a></h3>
-                            <p>
-                                Vivamus a ligula quam. Dolor blandit eu leo non et init set
-                                ipsum corsec monec..
-                            </p>
-                        </div>
-                    </div>
-                    <!--grid-3-->
-                    <div class="grid-box">
-                        <div class="grid-image">
-                            <img src="images/3.jpg" alt="" />
-                        </div>
-                        <div class="grid-text">
-                            <h3><a href="">Fitness Program</a></h3>
-                            <p>
-                                Vivamus a ligula quam. Dolor blandit eu leo non et init set
-                                ipsum corsec monec..
-                            </p>
-                        </div>
-                    </div>
-                    <!--grid-4-->
-                    <div class="grid-box">
-                        <div class="grid-image">
-                            <img src="images/4.jpg" alt="" />
-                        </div>
-                        <div class="grid-text">
-                            <h3><a href="">Group Classes</a></h3>
-                            <p>
-                                Vivamus a ligula quam. Dolor blandit eu leo non et init set
-                                ipsum corsec monec..
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="start">
-        <div class="container">
-            <div class="start-p">
-                <div class="start-flex">
-                    <div class="left-content">
-                        <h1>Start Your workout now</h1>
-                        <p>
-                            Enter your name and email in the form below to get your first
-                            free workout at our fitness centre.
+                <div class="service-flex">
+                    <div class="left-ser-data">
+                        <h5>blend coffee</h5>
+                        <h2>our service</h2>
+                        <p>We make the delicious coffee for the coffee lovers. We are a team of dedicated coffee fans
+                            who celebrate exceptional coffee brands and roasters. Lorem ipsum viverra feugiat. Pellen
+                            tesque libero ut justo, in ligula. Semper at.</p>
+                        <p>We make the delicious coffee for the coffee lovers. We are a team of dedicated coffee fans
+                            who celebrate exceptional coffee brands and roasters, ipsum dolor.
                         </p>
-                        <form action="">
-                            <input type="text" placeholder="Your Name" />
-                            <br />
-                            <input type="text" placeholder="Your Email" />
-                            <br />
-                            <button>Join Now</button>
-                            <br />
-                            <h5>*only for 5 days</h5>
-                        </form>
+                        <div class="read-btn">
+                            <button> Read More</button>
+                        </div>
                     </div>
-                    <div class="right-content">
-                        <div class="image">
-                            <img src="images/image.png" alt="" />
+                    <div class="right-ser-data">
+                        <div class="right-grid">
+                            <!--grid-1-->
+                            <div class="grid-1">
+                                <div class="icon">
+                                    <span class="fa-solid fa-mug-saucer"></span>
+                                </div>
+                                <h2><a href="">types of coffee</a></h2>
+                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum sit et init
+                                    laore leo et.</p>
+                            </div>
+                            <!--grid-2-->
+                            <div class="grid-1">
+                                <div class="icon">
+                                    <span class="fa-solid fa-martini-glass"></span>
+                                </div>
+                                <h2><a href="">Bean varieties</a></h2>
+                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum sit et init
+                                    laore leo et.</p>
+                            </div>
+                            <!--grid-3-->
+                            <div class="grid-1">
+                                <div class="icon">
+                                    <span class="fa-brands fa-pagelines"></span>
+                                </div>
+                                <h2><a href="">coffee & pastry</a></h2>
+                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum sit et init
+                                    laore leo et.</p>
+                            </div>
+                            <!--grid-4-->
+                            <div class="grid-1">
+                                <div class="icon">
+                                    <span class="fa-brands fa-envira"></span>
+                                </div>
+                                <h2><a href="">coffee to go</a></h2>
+                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum sit et init
+                                    laore leo et.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,71 +206,229 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="coffee-gallery">
         <div class="container">
-            <div class="blog-p">
+            <div class="gallery-p">
                 <div class="heading">
-                    <h6>BLOG POSTS</h6>
-                    <h1>Most recent fitness posts</h1>
+                    <p>coffee gallery</p>
+                    <h1>portfolio gallery</h1>
+                </div>
+                <div class="gallery-grid">
+                    <div class="img-g">
+                        <img src="images/blog1.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>Perfect Cup</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/blog2.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>Baked Beans</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/blog3.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>Mocha</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/blog4.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>cappuccino</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/blog5.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>Macchiatio</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/blog6.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>Coffee cup</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/1.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>Filtered Coffee</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-g">
+                        <img src="images/3.jpg" alt="">
+                        <div class="text">
+                            <div class="text-delay">
+                                <h2>coffee latte</h2>
+                                <h4>cup of coffee/filtered</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="test-p">
+                <div class="heading">
+                    <h6>testimonials</h6>
+                    <h1>What our customer says</h1>
+                </div>
+                <div class="test-profile">
+                    <div class="image">
+                        <img src="images/team1.jpg" alt="">
+                        <h3>Dennis wilson</h3>
+                    </div>
+                    <div class="para">
+                        <p>
+                            <sup><span class="fa-solid fa-quote-left"></span></sup>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Repellat libero possimus minima consectetur beatae molestiae sit eius,
+                            aperiam non, neque sequi inventore! Esse dignissimos, a quasi cum inventore rerum fugiat.
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="">
+                                    <span class="fa-brands  fa-facebook-f"></span>
+                                </a></li>
+                            <li><a href="">
+                                    <span class="fa-brands fa-twitter"></span>
+                                </a></li>
+                            <li><a href="">
+                                    <span class="fa-brands fa-instagram"></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="blog">
+        <div class="container">
+            <div class="blod-p">
+                <div class="heading">
+                    <h6>our coffee blog</h6>
+                    <h1>latest blog post</h1>
                 </div>
                 <div class="blog-flex">
                     <div class="card">
-
-                        <div>
-                            <div class="card-img-hover">
-                                <img src="images/blog1.jpg" alt="" />
-                                <div class="img-text">
-                                    <h4>Uncategorized</h4>
-                                </div>
-                            </div>
-
-                            <div class="card-text">
-                                <h1><a href="">Hello World!</a></h1>
-                                <div class="task">
-                                    <img src="images/w3.jpeg" alt="" />
-                                    <h3><a href="">W3Layouts</a></h3>
-                                    <h6>April 21, 2022</h6>
-                                </div>
+                        <div class="card-img-hover">
+                            <img src="images/blog1 (1).jpg" alt="">
+                            <div class="img-text">
+                                <h4>coffee</h4>
                             </div>
                         </div>
-
-                        <div>
-                            <div class="card-img-hover">
-                                <img src="images/blog5.jpg" alt="" />
-                                <div class="img-text">
-                                    <h4>Gym</h4>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h1><a href="">If my last day of crossfit were tomorrow</a></h1>
-                                <div class="task">
-                                    <img src="images/w3.jpeg" alt="" />
-                                    <h3><a href="">W3Layouts</a></h3>
-                                    <h6>April 21, 2022</h6>
-                                </div>
+                        <div class="card-text">
+                            <h1><a href="">Advantages and disadvantages of Coffee</a></h1>
+                            <div class="task">
+                                <button>Read More</button>
+                                <h6>
+                                    <span class="fa-solid fa-calendar-days"></span>
+                                    27 april,2021
+                                </h6>
                             </div>
                         </div>
-                        <div>
-                            <div class="card-img-hover">
-                                <img src="images/blog6.jpg" alt="" />
-                                <div class="img-text">
-                                    <h4>Gym</h4>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h1>
-                                    <a href="">The heavyweight of olympics:powerlifting for the pros</a>
-                                </h1>
-                                <div class="task">
-                                    <img src="images/w3.jpeg" alt="" />
-                                    <h3><a href="">W3Layouts</a></h3>
-                                    <h6>April 21, 2022</h6>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-hover">
+                            <img src="images/blog4.jpg" alt="">
+                            <div class="img-text">
+                                <h4>Coffee</h4>
                             </div>
                         </div>
-
+                        <div class="card-text">
+                            <h1><a href="">Brewing method of coffee</a></h1>
+                            <div class="task">
+                                <button>Read More</button>
+                                <h6>
+                                    <span class="fa-solid fa-calendar-days"></span>
+                                    27 April, 2014
+                                </h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="footer-p">
+                <div class="footer-grid">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <a href="">
+                                <span class="fa-solid fa-mug-saucer"></span>
+                                Coffee Cafe
+                            </a>
+                        </div>
+                        <div class="para">
+                            We make the delicious coffee for the coffee lovers. We are a team of dedicated coffee fans
+                            who celebrate exceptional coffee brands and roasters by providing our guests the unique
+                            opportunity to try coffee drinks
+                        </div>
+                    </div>
+                    <div class="footer-address">
+                        <h3>Get In Touch</h3>
+                        <div class="add">
+                            <p>address : <span>2005 stokes isle apt.576,coffee cafe center,USA.</span></p>
+                        </div>
+                        <div class="mail">
+                            <span>Email : </span>
+                            <a href="">info@mail.com</a>
+                        </div>
+                        <div class="phone">
+                            <span>Phone : </span>
+                            <a href="">+(21)-255-886-1234</a>
+                        </div>
+                    </div>
+                    <div class="footer-news">
+                        <h3>Newsletter</h3>
+                        <p>Enter your email and receive the latest news from us. We'll never share your email address
+                        </p>
+                        <form action="">
+                            <input type="text" placeholder="Your Email Address">
+                            <button>
+                                <span class="fa-solid fa-paper-plane"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="copy">
+        <div class="container">
+            <div class="copy-p">
+                <p>&copy;2023 coffee cafe all rights reserved | wordpress theme by <a href="">W3layouts</a></p>
             </div>
         </div>
     </section>

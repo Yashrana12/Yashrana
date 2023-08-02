@@ -1,4 +1,5 @@
 import React from "react";
+// import ClassComponent from "./ClassComponent";
 import "./head.css";
 
 class Head extends React.Component {

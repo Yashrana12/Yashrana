@@ -1,0 +1,36 @@
+@media (max-width: 576px) {
+    .container {
+        margin: 0px 20px;
+    }
+
+    .header .navigation .logo {
+        flex: 0.6;
+
+    }
+
+    .header .navigation{
+        justify-content: space-evenly;
+    }
+    .header .navigation .logo a {
+        color: #2a2a2a;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .header .navigation .nav {
+        flex: 1;
+        display: none;
+    }
+
+    
+
+    .header .navigation .bar {
+        display: block;
+        flex: 0.1;
+        justify-content: end;
+        align-items: center;
+    }
+    .header .navigation .open_menu{
+        display: block;
+    }
+}
