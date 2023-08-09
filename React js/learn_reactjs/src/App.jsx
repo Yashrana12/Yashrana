@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import TestMultiInput from "./input/TestMultiInput";
+import MultiInputForm from "./input/MultiInputForm";
 // import Fragment from "./ConditionalRander-Map-Fragmet/Fragment";
 // import ConditionalProject from "./task/ConditionalProject";
 // import MapKeyPro from "./task/MapKeyPro";
@@ -7,10 +9,11 @@ import "./App.css";
 // import InputCom from "./input/inputCom";
 // import CarInput from "./input/carInput";
 // import ColorInput from "./input/ColorInput";
-import DeleteInput from "./input/DeleteInput";
-import UpdateChanges from "./input/ChangeUpdate";
-import ChangeUpdate from "./input/ChangeUpdate";
-import TestUpdate from "./input/TestUpdate";
+// import DeleteInput from "./input/DeleteInput";
+// import UpdateChanges from "./input/ChangeUpdate";
+// import ChangeUpdate from "./input/ChangeUpdate";
+// import TestUpdate from "./input/TestUpdate";
+// import MultipleInput from "./input/MultipleInput";
 // import Conditional_rander from "./ConditionalRander-Map-Fragmet/Conditional_rander";
 // import MapKey from "./ConditionalRander-Map-Fragmet/mapKey";
 // import PropsDestructuring from "./Props/PropsDestructuring";
@@ -67,7 +70,10 @@ function App() {
       {/* <ColorInput /> */}
       {/* <DeleteInput /> */}
       {/* <ChangeUpdate /> */}
-      <TestUpdate />
+      {/* <TestUpdate /> */}
+      {/* <MultipleInput /> */}
+      {/* <TestMultiInput /> */}
+      <MultiInputForm />
     </div>
   );
 }

@@ -8,6 +8,6 @@
 // console.log(output)
 
 const input = "TEST"
-const output = input.slice(0, input.length - 0).split('').join('+').split('').join('')
+const output = input.slice(0, input.length - 0).split('').join('+').split('').join('')``
 
 console.log(output)
