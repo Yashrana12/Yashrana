@@ -33,6 +33,27 @@ export default function MultiInputForm() {
       zip: "",
     });
   }
+  let [formInd, setFormInd] = useState(null);
+
+  // for delete
+  function deleteHandler(index) {
+    formArr.splice(index, 1);
+    setFormArr([...formArr]);
+  }
+
+  // for update
+  function updateFun(index, formData) {
+    setFormData(formData);
+    setFormInd([...formArr]);
+  }
+
+  // for save update changes
+  function updateChanges() {
+    formArr.splice(formInd, 1, formData);
+    setFormArr([...formArr]);
+    setData("");
+    setFormInd(null);
+  }
   return (
     <>
       <div
@@ -153,6 +174,9 @@ export default function MultiInputForm() {
               <Button variant="primary" onClick={() => getData()}>
                 Submit
               </Button>
+              <Button onClick={() => updateChanges()} variant="success">
+                Save Chnages
+              </Button>
             </Form>
             {
               <Table striped bordered hover>
@@ -185,7 +209,11 @@ export default function MultiInputForm() {
                         <td>{e.zip}</td>
                         <td>
                           <Button variant="info">
-                            <AiOutlineDelete />
+                            <AiOutlineDelete onClick={() => deleteHandler(i)} />
+                          </Button>
+                          <Button onClick={() => updateFun()} variant="info">
+                            {" "}
+                            Update
                           </Button>
                         </td>
                       </tr>
