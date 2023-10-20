@@ -1,2 +1,4 @@
 let str="My Name Is Yash"
-console.log()
+
+let x=str.split("").reverse().join("")
+console.log(x)
